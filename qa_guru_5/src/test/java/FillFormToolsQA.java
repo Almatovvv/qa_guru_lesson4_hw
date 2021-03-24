@@ -28,10 +28,10 @@ public class FillFormToolsQA {
         open("https://demoqa.com/automation-practice-form");
 
         $("#firstName").setValue(firstName);
-        $("#lastName").shouldBe(visible).setValue(lastName);
-        $("#userEmail").shouldBe(visible).setValue(userEmail);
-        $x("//label[contains(text(),'Other')]").shouldBe(visible).click();
-        $("#userNumber").shouldBe(visible).setValue(userNumber);
+        $("#lastName").setValue(lastName);
+        $("#userEmail").setValue(userEmail);
+        $x("//label[contains(text(),'Other')]").click();
+        $("#userNumber").setValue(userNumber);
         $("#dateOfBirthInput").click();
         $x("//select[@class='react-datepicker__month-select']").selectOption(monthSelect);
         $x("//select[@class='react-datepicker__year-select']").selectOption(yearSelect);
