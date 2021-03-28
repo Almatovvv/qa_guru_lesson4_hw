@@ -26,8 +26,8 @@ public class GitHubProjectWiki {
 
         $("[name=q]").setValue("selenide").pressEnter();
         $("[href='/selenide/selenide']").click();
-        $("[href='/selenide/selenide/wiki']").click();
-        $("[data-filterable-for='wiki-pages-filter']").$("[href='/selenide/selenide/wiki/SoftAssertions']").click();
+        $(byText("Wiki")).click();
+        $(byText("SoftAssertions")).click();
 
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class:"));
     }
